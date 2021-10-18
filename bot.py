@@ -81,39 +81,7 @@ class bot:
         chrome_browser.get('https://www.instagram.com/'+self.username)
             
     
-    def securityCheck(self):
-        chrome_browser = self.driver
-        
-        
-        chrome_browser.implicitly_wait(3)
-        print('checking for two step verification')
-        try:
-            check_str=chrome_browser.find_element_by_id('verificationCodeDescription').text
-        except:
-                return False
-            
-        sample_str='Enter the code we sent'
-        if sample_str in check_str:
-            return True
-        else:
-            return False
-        
-        print('checked for two step verification ')
     
-    def setCode(self,code):
-        chrome_browser = self.driver
-        chrome_browser.implicitly_wait(3)
-        print('seting up code given by usser')
-        securityCode=chrome_browser.find_element_by_xpath('//input[@aria-label="Security Code"]')
-        securityCode.clear()
-        securityCode.send_keys(code)
-        time.sleep(2)
-        confirm=chrome_browser.find_element_by_xpath('//button[contains(text(),"Confirm")]')
-        confirm.click()
-        print('code verification done')
-        
-    def closeBrowser(self):
-        self.driver.close()
         
    
 insta=bot('USERNAME','PASSWORD')
@@ -138,7 +106,7 @@ username = os.environ.get("username")
 password = os.environ.get("password")
 
 insta.searchHashtag('gainwithmchina')
-insta.likePhoto(100)
+insta.likePhoto(1000)
 insta.closeBrowser()       
         
         
