@@ -1,0 +1,22 @@
+{
+    "name": "instabot",
+    "description": "just a simple instagram bot !",
+    "logo": "https://telegra.ph/file/a54ed27b0dc3fc3e439fd.jpg",
+    "repository": "https://github.com/famouskaykay/instagram",
+    "env": {
+        "password": {
+            "description": "enter your instagram password ",
+            "required": true
+        },
+        "username": {
+            "description": "your username make sure 2step verification is disabled.",
+            "required": true
+        },
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
+        
