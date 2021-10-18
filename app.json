@@ -11,7 +11,7 @@
         "username": {
             "description": "your username make sure 2step verification is disabled.",
             "required": true
-        },
+        }
     },
     "addons": [
         {
