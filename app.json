@@ -6,9 +6,9 @@
     "env": {
         "password": {
             "description": "enter your instagram password ",
-            "required": true
+            "required": false
         },
-        "username": {
+        "token": {
             "description": "your username make sure 2step verification is disabled.",
             "required": true
         }
