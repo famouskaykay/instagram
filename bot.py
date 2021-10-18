@@ -6,10 +6,11 @@ import sys
 import os
 import re
 import firefox
+import selenium
+
 username = os.environ.get("username")
 password = os.environ.get("password")
 
-browser = webdriver.firefox()
 def print_same_line(text):
     sys.stdout.write('\r')
     sys.stdout.flush()
