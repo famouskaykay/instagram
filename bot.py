@@ -73,6 +73,6 @@ class InstaBot:
         
         
 my_bot = InstaBot("username", "password")       
-words = ['Hashtag', 'Hashtag', 'Hashtag']       # type in the tags without the hashtag symbol inside the apostrophes. For example, 'abstract', 'sky', 'photography' etc.
+words = ['gainwithxtiandela', 'gainwithmtaaraw', 'gainwithmchina', 'chuva', 'chuvadelike']       # type in the tags without the hashtag symbol inside the apostrophes. For example, 'abstract', 'sky', 'photography' etc.
 for i in words:
     my_bot.like_photo(i)
