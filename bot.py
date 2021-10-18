@@ -7,8 +7,8 @@ import os
 import re
 
 
-username = os.environ.get("username", none)
-password = os.environ.get("password", none)
+username = os.environ.get("username")
+password = os.environ.get("password")
 
 def print_same_line(text):
     sys.stdout.write('\r')
