@@ -10,6 +10,7 @@ import re
 username = os.environ.get("username")
 password = os.environ.get("password")
 
+browser = webdriver.Chrome()
 def print_same_line(text):
     sys.stdout.write('\r')
     sys.stdout.flush()
@@ -18,10 +19,10 @@ def print_same_line(text):
 
 class InstaBot:
     def __init__(self, username, password):
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.chrome()
         self.username = username
         self.driver.get("https://instagram.com")
-        sleep(4)
+        sleep(7)
         self.driver.find_element_by_xpath("//input[@name=\"username\"]").send_keys(username)
         self.driver.find_element_by_xpath("//input[@name=\"password\"]").send_keys(password)
         self.driver.find_element_by_xpath("//button[@type='submit']").click()
