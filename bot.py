@@ -5,12 +5,10 @@ import random
 import sys
 import os
 import re
-
-
 username = os.environ.get("username")
 password = os.environ.get("password")
 
-browser = webdriver.Chrome()
+browser = webdriver.firefox()
 def print_same_line(text):
     sys.stdout.write('\r')
     sys.stdout.flush()
@@ -19,7 +17,7 @@ def print_same_line(text):
 
 class InstaBot:
     def __init__(self, username, password):
-        self.driver = webdriver.chrome()
+        self.driver = webdriver.firefox()
         self.username = username
         self.driver.get("https://instagram.com")
         sleep(7)
