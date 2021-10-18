@@ -5,6 +5,7 @@ import random
 import sys
 import os
 import re
+import firefox
 username = os.environ.get("username")
 password = os.environ.get("password")
 
